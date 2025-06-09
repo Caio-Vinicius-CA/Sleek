@@ -1,0 +1,506 @@
+/* ===== ESTILOS BÁSICOS ===== */
+:root {
+    --Branco: #F5F5F5;
+    --Fundo2: #F0F0F0;
+    --V1: #D11C20;
+    --V2: #AE080B;
+    --V3: #920003;
+    --V5: #530002;
+    --C1: #F7F7F7;
+    --C3: #DEDEDE;
+    --C5: #B3B3B3;
+    --EstrelaHover: #ce1c1f99;
+    --Degrade2: linear-gradient(#920003, #530002);
+    --roboto: 'Roboto', sans-serif;
+    --montserrat: 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--roboto);
+    color: #111;
+    background-color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: var(--V1);
+}
+
+section {
+    scroll-margin-top: 77px;
+}
+
+.legenda {
+    position: absolute;
+    bottom: 2.5%;
+    left: 1.8%;
+}
+
+/* ===== HEADER E NAV ===== */
+.top-nav {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2.3rem;
+    background: #fff;
+    transition: all 300ms ease-in-out;
+    filter: drop-shadow(0 -10px 20px rgb(173, 173, 173));
+
+}
+
+.logo {
+    font-family: var(--montserrat);
+    font-weight: bold;
+    font-style: italic;
+    font-size: 2.3rem;
+    color: #d10000;
+}
+
+nav {
+    display: flex;
+    gap: 1.5rem;
+    font-family: var(--montserrat);
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+nav a {
+    transition: all 0.5s ease;
+}
+
+nav a:hover {
+    color: var(--V2);
+    /* transform: scale(1.05); */
+    transform: translateY(-1px);
+    transition: all 0.5s ease;
+}
+
+
+/* ===== HERO SECTION ===== */
+.hero {
+    background: url('../images/Fundo.png') no-repeat center center/cover;
+    height: 100vh;
+    position: relative;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.hero .legenda {
+    color: #404040;
+}
+
+
+.overlay {
+    text-align: center;
+}
+
+.overlay h1 {
+    font-family: var(--montserrat);
+    font-size: 9.2rem;
+    font-weight: bold;
+    font-style: italic;
+    letter-spacing: -4px;
+}
+
+.overlay p {
+    font-family: var(--roboto);
+    font-size: 1.2rem;
+}
+
+.overlay .mini {
+    font-family: var(--roboto);
+    font-size: 0.8rem;
+    font-weight: 200;
+}
+
+/* ===== INTRO ===== */
+.intro {
+    padding: 6rem 4rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.intro-text {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: #d10000;
+}
+
+.intro-text h2 {
+    font-size: 4rem;
+    color: #d10000;
+    margin-bottom: 1rem;
+    line-height: 90%;
+}
+
+.intro-text h2 span {
+    letter-spacing: 4px;
+}
+
+.intro-p {
+    width: 23.5%;
+    font-size: 1.3rem;
+    color: var(--V3);
+    margin-right: 4rem;
+}
+
+/* ===== SERVIÇOS GERAL ===== */
+.servicos {
+    background: var(--V2);
+    padding: 5.5rem 16.5rem;
+    color: white;
+    position: relative;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 50px;
+}
+
+.card {
+    background: var(--V2);
+    color: var(--Branco);
+    border: 1px solid var(--Branco);
+    border-radius: 12px;
+    flex: 1;
+    text-align: center;
+    filter: drop-shadow(4px 4px 4px var(--V5));
+    height: 200px;
+    width: 200px;
+    position: relative;
+    transition: all 0.4s ease;
+}
+
+.card-hover {
+    border: 1px solid var(--Branco);
+}
+
+.card-not-hover {
+    border: 1px solid var(--V5);
+}
+
+
+.card h3 {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    text-align: left;
+    line-height: 90%;
+    font-size: 1.2rem;
+}
+
+.card a {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--V2);
+    border: 1px solid var(--Branco);
+    color: white;
+    padding: 0.5rem 1.2rem;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.servicos .legenda {
+    color: var(--V3);
+    bottom: 4%;
+    left: 1.5%;
+}
+
+/* ===== SERVIÇOS DETALHES ===== */
+.detalhes-servico {
+    padding: 4rem 4rem;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.detalhes-servico h2 {
+    color: var(--V1);
+    font-family: var(--montserrat);
+    margin-bottom: 2rem;
+    font-size: 4rem;
+    line-height: 90%;
+}
+
+.detalhes-servico h2::after {
+    content: '';
+    display: block;
+    width: 73%;
+    height: 3px;
+    background: var(--EstrelaHover);
+    margin-top: 1rem;
+}
+
+.descricao {
+    background: var(--V2);
+    color: white;
+    padding: 2rem;
+    margin-right: 3em;
+    border-radius: 8px;
+    width: 50%;
+    width: 700px;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 2.8rem;
+    border: 1px solid var(--Branco);
+    filter: drop-shadow(0px 4px 4px var(--V5));
+}
+
+.descricao h3 {
+    font-size: 2.5rem;
+    line-height: 90%;
+}
+
+.descricao p {
+    font-size: 1.25rem;
+    letter-spacing: 0.5px;
+    font-weight: 300;
+}
+
+#servico-desc {
+    width: 90%;
+}
+
+.arrows {
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    padding: 0 50px;
+}
+
+.arrows-inside {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.arrows-inside span {
+    cursor: pointer;
+    font-size: 1.8rem;
+    transition: all 0.4s ease;
+}
+
+.arrows-inside span:hover {
+    transform: scale(1.2);
+}
+
+.detalhes-servico .legenda {
+    color: var(--C3);
+}
+
+/* ===== CONTATO ===== */
+.contato {
+    background: var(--C1) url(../images/Sleek\ Fundo.png);
+    padding: 10rem 2rem;
+    font-family: var(--roboto);
+}
+
+.contato :placeholder-shown {
+    font-family: var(--roboto);
+}
+
+.form-box {
+    display: flex;
+    width: 60%;
+    margin: 0 auto;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #a30000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.contato-dados {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background: var(--Degrade2);
+    color: var(--Branco);
+    padding: 40px 30px;
+    gap: 20px;
+}
+
+.contato-dados h2 {
+    font-family: var(--montserrat);
+    font-size: 2.35rem;
+    font-weight: bold;
+}
+
+.dados {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    font-size: 15px;
+}
+
+.icon {
+    width: 18px;
+    height: 18px;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+    background: #f5f5f5;
+    padding: 20px;
+    gap: 15px;
+    position: relative;
+}
+
+.ipt {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.ipt label {
+    margin-bottom: 5px;
+    color: #660000;
+    font-weight: 600;
+}
+
+.ipt input,
+.ipt textarea {
+    padding: 14px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.ipt textarea {
+    resize: none;
+    height: 240px;
+}
+
+form button {
+    position: absolute;
+    top: 87.5%;
+    align-self: flex-end;
+    background: var(--Degrade2);
+    color: white;
+    padding: 0.7rem 1.4rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+form button:hover {
+    background: var(--Degrade2);
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background: var(--Degrade2);
+    color: var(--C5);
+    padding: 3rem 5rem 0.5rem 5rem;
+    font-family: var(--roboto);
+    font-size: 1.2rem;
+}
+
+.footer-content h1,
+.footer-content h2 {
+    font-family: var(--montserrat);
+    color: var(--Branco);
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 10rem;
+}
+
+.footer-logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 150px;
+}
+
+.footer-logo h1 {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 2.3rem;
+    margin-bottom: 2rem;
+}
+
+.footer-bottom {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+.footer-content h2 {
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+}
+
+.footer-content p {
+    margin: 0.3rem 0;
+    opacity: 0.9;
+}
+
+.footer-contact hr {
+    margin: 1rem 0;
+    border: none;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+#footer-redes {
+    display: flex;
+    flex-direction: row;
+    padding-left: 2px;
+    gap: 1rem;
+}
+
+#footer-redes img {
+    width: 24px;
+    height: 24px;
+}
+
+/* ===== RESPONSIVIDADE ===== */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-contact hr {
+        width: 100%;
+    }
+}

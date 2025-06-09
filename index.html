@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sleek. | Estúdio Criativo</title>
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Link Script -->
+    <script src="assets/js/script.js" defer></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="top-nav">
+      <div class="logo">sleek.</div>
+      <nav>
+        <a href="#inicio">início</a>
+        <img src="assets/images/Estrela 2.png" alt="Estrela" />
+        <a href="#sobre">sobre</a>
+        <img src="assets/images/Estrela 2.png" alt="Estrela" />
+        <a href="#servicos">serviços</a>
+        <img src="assets/images/Estrela 2.png" alt="Estrela" />
+        <a href="#contato">contato</a>
+      </nav>
+    </header>
+
+    <!-- Início -->
+    <section class="hero" id="inicio">
+      <div class="overlay">
+        <div id="minis">
+          <p class="mini">ESTD. 2024</p>
+          <p class="mini">RECIFE - BRASIL</p>
+        </div>
+        <h1>sleek.</h1>
+        <p>ESTÚDIO CRIATIVO</p>
+      </div>
+      <div class="legenda">
+        <p>
+          ESTÚDIO CRIATIVO <br />
+          BRANDING & MARKETING
+        </p>
+      </div>
+    </section>
+
+    <!-- Sobre -->
+    <section class="intro" id="sobre">
+      <div class="intro-text">
+        <h2>IT’S TIME<br /><span>FOR NEW</span><br />IDEAS</h2>
+        <div class="intro-p">
+          <p>
+            nossa agência carrega uma nova perspectiva de marketing e branding,
+            tendo como objetivo fortalecer o posicionamento da sua marca,
+            atráves de estratégias criativas e eficazes desenvolvidas de forma
+            personalizada
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Serviços -->
+    <section class="servicos" id="servicos">
+      <div class="card-container" id="card-container-id">
+        <div class="card">
+          <h3>social<br />media</h3>
+          <a href="#" class="cardButtons">SAIBA MAIS</a>
+        </div>
+        <div class="card">
+          <h3>story<br />maker</h3>
+          <a href="#" class="cardButtons">SAIBA MAIS</a>
+        </div>
+        <div class="card">
+          <h3>design<br />digital</h3>
+          <a href="#" class="cardButtons">SAIBA MAIS</a>
+        </div>
+        <div class="card">
+          <h3>tráfego<br />pago</h3>
+          <a href="#" class="cardButtons">SAIBA MAIS</a>
+        </div>
+      </div>
+      <div class="legenda">
+        <p>
+          ESTÚDIO CRIATIVO <br />
+          BRANDING & MARKETING
+        </p>
+      </div>
+    </section>
+
+    <!-- Detalhes de serviço -->
+    <section class="detalhes-servico">
+      <h2>NOSSOS<br />SERVIÇOS</h2>
+      <div class="descricao">
+        <div>
+          <h3 id="servico-titulo">social<br />media</h3>
+        </div>
+        <div>
+          <p id="servico-desc">
+            é um serviço essencial para qualquer negócio que deseja se destacar
+            no mercado digital. ao nos contratar você garante que sua marca
+            esteja presente nas redes sociais de forma estratégica e eficaz.
+            este serviço inclui o desenvolvimento de posts, vídeos, stories e
+            outros formatos de conteúdo relevantes para o público, além do
+            monitoramento das métricas das redes sociais para avaliar o
+            desempenho das ações.
+          </p>
+        </div>
+        <div class="arrows">
+          <div class="arrows-inside">
+            <span id="left-arrow">◄</span>
+            <span id="right-arrow">►</span>
+          </div>
+        </div>
+      </div>
+      <div class="legenda">
+        <p>
+          ESTÚDIO CRIATIVO <br />
+          BRANDING & MARKETING
+        </p>
+      </div>
+    </section>
+
+    <!-- Contato -->
+    <section class="contato" id="contato">
+      <div class="form-box">
+        <!-- Informações de contato -->
+        <div class="contato-dados">
+          <h2>contate-nos</h2>
+          <div class="dados">
+            <img class="icon" src="assets/icons/mail.svg" alt="mail" />
+            <p>sleekstudiocriativo@gmail.com</p>
+          </div>
+          <div class="dados">
+            <img class="icon" src="assets/icons/phone.svg" alt="phone" />
+            <p>+55 81 99362-7547</p>
+          </div>
+          <div class="dados">
+            <img
+              class="icon"
+              src="assets/icons/instagram.svg"
+              alt="instagram"
+            />
+            <p>@sleekstudio</p>
+          </div>
+        </div>
+
+        <!-- Formulário -->
+        <form class="formulario">
+          <div class="ipt">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" placeholder="Seu nome" required />
+          </div>
+          <div class="ipt">
+            <label for="tel">Telefone</label>
+            <input
+              type="text"
+              id="tel"
+              placeholder="+55 (21) 9999-9999"
+              required
+            />
+          </div>
+          <div class="ipt">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="contato@email.com"
+              required
+            />
+          </div>
+          <div class="ipt">
+            <label for="mensagem">Mensagem</label>
+            <textarea
+              id="mensagem"
+              placeholder="O que você precisa?"
+            ></textarea>
+          </div>
+          <button type="submit">ENVIAR MENSAGEM</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-content">
+        <div class="footer-logo">
+          <h1>sleek.</h1>
+          <p class="footer-bottom">
+            Sleek © 2025 · Todos os direitos reservados
+          </p>
+        </div>
+
+        <div class="footer-contact">
+          <h2>CONTATO</h2>
+          <p>+55 81 99362-7547</p>
+          <p>sleekstudiocriativo@gmail.com</p>
+          <hr />
+          <div id="footer-redes">
+            <a href="#"
+              ><img src="assets/icons/instagram.svg" alt="instagram"
+            /></a>
+            <a href="#"><img src="assets/icons/phone.svg" alt="instagram" /></a>
+            <a href="#"><img src="assets/icons/mail.svg" alt="instagram" /></a>
+          </div>
+        </div>
+
+        <div class="footer-info">
+          <h2>INFORMAÇÕES</h2>
+          <p>Início</p>
+          <p>Sobre</p>
+          <p>Serviços</p>
+          <p>Contato</p>
+          <p>Termos e Condições</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
