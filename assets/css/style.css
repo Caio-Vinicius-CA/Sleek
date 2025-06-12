@@ -107,6 +107,11 @@ nav a:hover {
     color: #404040;
 }
 
+.hero-termo {
+    background: var(--Degrade2);
+    width: 100%;
+    position: absolute;
+}
 
 .overlay {
     text-align: center;
@@ -419,6 +424,16 @@ form button:hover {
     background: var(--Degrade2);
 }
 
+/* ===== TERMO ===== */
+.termo section h2{
+    margin-bottom: 0.5rem;
+}
+
+.termo section ul {
+    padding: 12px 0;
+}
+
+
 /* ===== FOOTER ===== */
 footer {
     background: var(--Degrade2);
@@ -471,6 +486,14 @@ footer {
 .footer-content p {
     margin: 0.3rem 0;
     opacity: 0.9;
+}
+
+.footer-contact, .footer-info {
+    padding-top: 10px;
+}
+
+.footer-info a {
+    color: inherit;
 }
 
 .footer-contact hr {
