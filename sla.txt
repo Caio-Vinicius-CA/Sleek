@@ -1,56 +1,15 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>sleek. | Estúdio Criativo</title>
-
-    <!-- Link CSS -->
-    <link rel="stylesheet" href="assets/css/style.css" />
-
-    <!-- Fontes -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-
-    <!-- Link Script -->
-    <script src="assets/js/script.js" defer></script>
-  </head>
-  <body class="termo">
-    <!-- Header -->
-    <header class="top-nav">
-      <div class="logo"><a href="index.html">sleek.</a></div>
-      <nav>
-        <a href="index.html#inicio">início</a>
-        <img src="assets/images/Estrela 2.png" alt="Estrela" />
-        <a href="index.html#sobre">sobre</a>
-        <img src="assets/images/Estrela 2.png" alt="Estrela" />
-        <a href="index.html#servicos">serviços</a>
-        <img src="assets/images/Estrela 2.png" alt="Estrela" />
-        <a href="index.html#contato">contato</a>
-      </nav>
-    </header>
-
     <!-- Início -->
     <section class="hero-termo">
-      <div class="inside-hero">
-        <h2 class="C1">Termos de uso</h2>
-        <h1>termos e condições.</h1>
-      </div>
+      <h1>Termos de uso</h1>
     </section>
 
-    <!-- Sobre -->
-    <main class="container">
-      <section class="unidades">
+      <section>
         <h2>1. Coleta de dados</h2>
         <p>
           Ao preencher nosso formulário de contato, coletamos as seguintes
           informações:
         </p>
-        <ul>
+        <ul style="margin-left: 1rem">
           <li>Nome</li>
           <li>E-mail</li>
           <li>Número de telefone</li>
@@ -63,10 +22,10 @@
         </p>
       </section>
 
-      <section class="unidades">
-        <h2>2. Uso das informações</h2>
+      <section>
+        <h2 style="margin-top: 2rem">2. Uso das informações</h2>
         <p>As informações coletadas são utilizadas exclusivamente para:</p>
-        <ul>
+        <ul style="margin-left: 1rem">
           <li>Retornar seu contato</li>
           <li>Enviar propostas ou responder dúvidas</li>
           <li>Melhorar nosso atendimento</li>
@@ -77,8 +36,8 @@
         </p>
       </section>
 
-      <section class="unidades">
-        <h2>3. Armazenamento e segurança</h2>
+      <section>
+        <h2 style="margin-top: 2rem">3. Armazenamento e segurança</h2>
         <p>
           Seus dados são armazenados de forma segura e utilizados apenas
           internamente.
@@ -86,27 +45,27 @@
         <p>Você pode solicitar a exclusão dos seus dados a qualquer momento.</p>
       </section>
 
-      <section class="unidades">
-        <h2>4. Seus Direitos</h2>
+      <section>
+        <h2 style="margin-top: 2rem">4. Seus Direitos</h2>
         <p>
           De acordo com a LGPD (Lei Geral de Proteção de Dados), você tem o
           direito de:
         </p>
-        <ul>
+        <ul style="margin-left: 1rem">
           <li>Corrigir ou atualizar seus dados</li>
           <li>Solicitar a exclusão de suas informações</li>
           <li>Saber como seus dados estão sendo utilizados</li>
         </ul>
         <p>
           Para isso, entre em contato pelo e-mail:
-          <a href="mailto:sleekstudiocriativo@gmail.com" target="_blank"
+          <a href="mailto:sleekstudiocriativo@gmail.com"
             >sleekstudiocriativo@gmail.com</a
           >
         </p>
       </section>
 
-      <section class="unidades">
-        <h2>5. Cookies e Dados de navegação</h2>
+      <section>
+        <h2 style="margin-top: 2rem">5. Cookies e Dados de navegação</h2>
         <p>Nosso site não utiliza cookies de rastreamento.</p>
         <p>
           Podemos registrar informações de navegação de forma anônima, apenas
@@ -114,24 +73,27 @@
         </p>
       </section>
 
-      <section class="unidades">
-        <h2>6. Alterações nesta política</h2>
+      <section>
+        <h2 style="margin-top: 2rem">6. Alterações nesta política</h2>
         <p>Podemos atualizar este conteúdo a qualquer momento.</p>
         <p>A versão mais recente estará sempre disponível nesta página.</p>
       </section>
 
-      <section class="unidades">
-        <h2>7. Contato</h2>
+      <section>
+        <h2 style="margin-top: 2rem">7. Contato</h2>
         <p>
           Em caso de dúvidas sobre esta política, fale com a gente: <br /><br />
         </p>
         <p>
-          <a href="mailto:sleekstudiocriativo@gmail.com" target="_blank"
+          <a href="mailto:sleekstudiocriativo@gmail.com"
             >sleekstudiocriativo@gmail.com</a
           >
         </p>
       </section>
-      <p id="last-sth">Última atualização: 27 de maio de 2025</p>
+
+      <p style="margin-top: 3rem; font-size: 0.9rem; color: var(--C5)">
+        Última atualização: 27 de maio de 2025
+      </p>
     </main>
 
     <!-- Footer -->
@@ -170,7 +132,7 @@
           <p><a href="#sobre">Sobre</a></p>
           <p><a href="#servicos">Serviços</a></p>
           <p><a href="#contato">Contato</a></p>
-          <p><a href="termos.html">Termos e Condições</a></p>
+          <p><a href="termos.html" target="_blank">Termos e Condições</a></p>
         </div>
       </div>
     </footer>
