@@ -72,19 +72,19 @@
       <div class="card-container" id="card-container-id">
         <div class="card">
           <h3>social<br />media</h3>
-          <a href="#" class="cardButtons">SAIBA MAIS</a>
+          <a href="#detalhes-servico-id" class="cardButtons">SAIBA MAIS</a>
         </div>
         <div class="card">
           <h3>story<br />maker</h3>
-          <a href="#" class="cardButtons">SAIBA MAIS</a>
+          <a href="#detalhes-servico-id" class="cardButtons">SAIBA MAIS</a>
         </div>
         <div class="card">
           <h3>design<br />digital</h3>
-          <a href="#" class="cardButtons">SAIBA MAIS</a>
+          <a href="#detalhes-servico-id" class="cardButtons">SAIBA MAIS</a>
         </div>
         <div class="card">
           <h3>tráfego<br />pago</h3>
-          <a href="#" class="cardButtons">SAIBA MAIS</a>
+          <a href="#detalhes-servico-id" class="cardButtons">SAIBA MAIS</a>
         </div>
       </div>
       <div class="legenda">
@@ -96,7 +96,7 @@
     </section>
 
     <!-- Detalhes de serviço -->
-    <section class="detalhes-servico">
+    <section class="detalhes-servico" id="detalhes-servico-id">
       <h2>NOSSOS<br />SERVIÇOS</h2>
       <div class="descricao">
         <div>
@@ -135,20 +135,32 @@
         <div class="contato-dados">
           <h2>contate-nos</h2>
           <div class="dados">
-            <img class="icon" src="assets/icons/mail.svg" alt="mail" />
-            <p>sleekstudiocriativo@gmail.com</p>
+            <a href="mailto:sleekstudiocriativo@gmail.com" target="_blank">
+              <img class="icon" src="assets/icons/mail.svg" alt="mail" />
+            </a>
+            <a href="mailto:sleekstudiocriativo@gmail.com" target="_blank">
+              <p>sleekstudiocriativo@gmail.com</p>
+            </a>
           </div>
           <div class="dados">
-            <img class="icon" src="assets/icons/phone.svg" alt="phone" />
-            <p>+55 81 99362-7547</p>
+            <a href="https://api.whatsapp.com/send?phone=" target="_blank">
+              <img class="icon" src="assets/icons/phone.svg" alt="phone" />
+            </a>
+            <a href="https://api.whatsapp.com/send?phone=" target="_blank">
+              <p>+55 81 99362-7547</p>
+            </a>
           </div>
           <div class="dados">
-            <img
-              class="icon"
-              src="assets/icons/instagram.svg"
-              alt="instagram"
-            />
-            <p>@sleekstudio</p>
+            <a href="https://www.instagram.com/sleekestudio" target="_blank">
+              <img
+                class="icon"
+                src="assets/icons/instagram.svg"
+                alt="instagram"
+              />
+            </a>
+            <a href="https://www.instagram.com/sleekestudio" target="_blank">
+              <p>@sleekstudio</p>
+            </a>
           </div>
         </div>
 
@@ -208,7 +220,7 @@
               ><img src="assets/icons/instagram.svg" alt="instagram"
             /></a>
             <a
-              href="https://api.whatsapp.com/send?phone=5581993627547&text=ol%C3%A1%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20servi%C3%A7os%20da%20ag%C3%AAncia!&fbclid=PAQ0xDSwK4BF9leHRuA2FlbQIxMAABp_9dhobPYxUVII8VbSfi6afCeqgt8Ca_L4YDsj9TvDkTq3rXVWF_WqGQ3lSB_aem_dt_2R9RA85OpFqb9wa23ZA"
+              href="https://api.whatsapp.com/send?phone=5581993627547"
               target="_blank"
               ><img src="assets/icons/phone.svg" alt="instagram"
             /></a>
@@ -228,5 +240,17 @@
         </div>
       </div>
     </footer>
+    <script>
+      document.querySelectorAll('a[href^="#"]').forEach((link) => {
+        link.addEventListener("click", function (e) {
+          const targetId = this.getAttribute("href").substring(1);
+          const target = document.getElementById(targetId);
+          if (target) {
+            e.preventDefault();
+            target.scrollIntoView({ behavior: "smooth", block: "start" });
+          }
+        });
+      });
+    </script>
   </body>
 </html>

@@ -355,6 +355,10 @@ nav a:hover {
     font-weight: bold;
 }
 
+.contato-dados a {
+    color: var(--Branco);
+}
+
 .dados {
     display: flex;
     flex-direction: column;
@@ -395,6 +399,14 @@ nav a:hover {
     border-radius: 4px;
     border: 1px solid #ccc;
     font-size: 14px;
+}
+
+.ipt input:focus,
+.ipt textarea:focus {
+    border-color: var(--V3);
+    /* Cor da sua borda ao focar */
+    outline-color: var(--V3);
+    /* Remove o contorno azul padrão do navegador */
 }
 
 .ipt textarea {
