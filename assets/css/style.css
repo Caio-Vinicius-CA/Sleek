@@ -28,7 +28,7 @@ html {
 body {
     font-family: var(--roboto);
     color: #111;
-    background-color: #fff;
+    background-color: var(--Branco);
 }
 
 a {
@@ -64,7 +64,7 @@ header {
     z-index: 999;
     width: 100%;
     padding: 1rem 2.3rem;
-    background: #fff;
+    background: var(--Branco);
     transition: all 300ms ease-in-out;
     box-shadow: -3px 0 10px rgba(0, 0, 0, 0.3);
 
@@ -83,7 +83,7 @@ header {
     font-weight: bold;
     font-style: italic;
     font-size: 2.3rem;
-    color: #d10000;
+    color: var(--V1);
 }
 
 #navDeBarra {
@@ -112,7 +112,7 @@ nav a:hover {
 
 #mobile {
     height: 100%;
-    color: var(--V5);
+    color: var(--V1);
     display: none;
 }
 
@@ -123,7 +123,7 @@ nav a:hover {
     /* Oculto fora da tela */
     width: 250px;
     height: 100vh;
-    background: #1C1C1E;
+    background: var(--Branco);
     transition: right 0.3s ease-in-out;
     padding-top: 60px;
 }
@@ -139,7 +139,7 @@ nav a:hover {
 }
 
 #side-menu a {
-    color: #949fb6;
+    color: #d10000;
     font-weight: bold;
     font-size: 1.2rem;
     text-decoration: none;
@@ -206,12 +206,11 @@ nav a:hover {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    color: #d10000;
 }
 
 .intro-text h2 {
     font-size: 4rem;
-    color: #d10000;
+    color: var(--V1);
     margin-bottom: 1rem;
     line-height: 90%;
 }
@@ -263,7 +262,6 @@ nav a:hover {
 .card-not-hover {
     border: 1px solid var(--V5);
 }
-
 
 .card h3 {
     position: absolute;
@@ -616,7 +614,7 @@ footer {
 }
 
 .footer-contact hr {
-    margin: 1rem 0;
+    display: none;
     border: none;
     height: 1px;
     background-color: rgba(255, 255, 255, 0.2);
@@ -679,60 +677,422 @@ footer {
         align-items: center;
     }
 
-    /* FOOTER */
-    .footer-content {
+    /* INTRO */
+    .intro-text {
+        display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: space-between;
+    }
+
+    .divH2 {
+        width: 80%;
+    }
+
+    .intro-text h2 {
+        font-size: 3.2rem;
+        margin-bottom: 1rem;
+        line-height: 90%;
+    }
+
+    .intro-text h2 span {
+        letter-spacing: 4px;
+    }
+
+    .intro-p {
+        margin: 0 auto;
+        width: 80%;
+        font-size: 1.2rem;
+        color: var(--V3);
+    }
+
+    /* ===== SERVIÇOS GERAL ===== */
+    .servicos {
+        padding: 3.5rem 1rem 5.5rem 1rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    .card-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+    .card {
+        flex: 1;
         text-align: center;
+        height: 150px;
+        width: 150px;
+        position: relative;
     }
 
-    .footer-contact hr {
-        width: 100%;
-    }
-}
-
-@media (max-width: 480px) {
-    header {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 1rem;
-        gap: 0.5rem;
+    .card h3 {
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        text-align: left;
+        line-height: 90%;
+        font-size: 1.2rem;
     }
 
-    nav {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 0.8rem;
-        width: 100%;
-    }
-
-    nav a {
+    .card a {
+        padding: 0.5rem 0.8rem;
         font-size: 1rem;
-        padding: 0.4rem 0;
     }
 
-    .logo {
-        font-size: 2rem;
-    }
-
-    #numsei {
-        display: none;
-    }
-
-    #mobile {
-        display: block;
-    }
-
-    #bars {
-        font-size: 25px;
-        cursor: pointer;
-    }
-
-    #side-menu {
+    /* SERVIÇOS DETALHES */
+    .detalhes-servico {
+        padding: 3.5rem 1rem 5.5rem 1rem;
+        position: relative;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
     }
 
+    .detalhes-servico h2 {
+        font-size: 3.2rem;
+    }
+
+    .descricao {
+        padding: 2rem;
+        margin: 0 auto;
+        border-radius: 8px;
+        width: 90%;
+        height: 480px;
+        gap: 2rem;
+    }
+
+    .descricao h3 {
+        font-size: 2.5rem;
+        line-height: 90%;
+    }
+
+    .descricao p {
+        font-size: 1.2rem;
+        letter-spacing: 0.5px;
+        font-weight: 300;
+    }
+
+    #servico-desc {
+        width: 100%;
+    }
+
+    .arrows {
+        top: 89.2%;
+    }
+
+    .arrows-inside span {
+        cursor: pointer;
+        font-size: 1.7rem;
+        transition: all 0.4s ease;
+    }
+
+    /* CONTATO */
+    .contato {
+        padding: 3.5rem 1rem 5.5rem 1rem;
+    }
+
+    .form-box {
+        width: 90%;
+        flex-direction: column;
+    }
+
+    .contato-dados {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        padding: 20px 30px;
+        gap: 10px;
+    }
+
+    .contato-dados h2 {
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    .dados {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .icon {
+        width: 18px;
+        height: 18px;
+    }
+
+    .formulario {
+        display: flex;
+        flex-direction: column;
+        flex: 2;
+        padding: 30px 20px;
+        gap: 15px;
+        position: relative;
+    }
+
+    .ipt {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .ipt label {
+        margin-bottom: 5px;
+        font-weight: 600;
+    }
+
+    .ipt input,
+    .ipt textarea {
+        padding: 14px;
+        border-radius: 4px;
+        font-size: 14px;
+    }
+
+    .ipt textarea {
+        height: 140px;
+    }
+
+    form button {
+        position: static;
+        top: auto;
+        align-self: center;
+        padding: 0.8rem 1.4rem;
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+        padding: 3.5rem 1rem 5.5rem 1rem;
+        font-size: 1.2rem;
+        border: 1px solid blue;
+    }
+
+    .footer-content {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        gap: 1rem;
+        position: relative;
+    }
+
+    .footer-content div:not(:first-child) {
+        justify-content: flex-start;
+    }
+
+    .footer-logo,
+    .footer-contact,
+    .footer-info {
+        width: 80%;
+    }
+
+    .footer-logo {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+        justify-self: center;
+        gap: 0;
+    }
+
+    .footer-logo h1 {
+        font-size: 2.8rem;
+        margin-bottom: 0;
+    }
+
+    .footer-bottom {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    .footer-bottom::before {
+        content: '';
+        width: 73%;
+        height: 0.5px;
+        display: block;
+        background-color: rgba(255, 255, 255, 0.2);
+        margin-top: 1rem;
+        margin-bottom: 0.2rem;
+        align-self: center;
+        place-self: center center;
+    }
+
+    .footer-content h2 {
+        font-size: 1.4rem;
+        font-weight: 400;
+        margin-bottom: 1rem;
+        letter-spacing: 1px;
+    }
+
+    .footer-content p {
+        margin: 0.3rem 0;
+        opacity: 0.9;
+    }
+
+    .footer-contact,
+    .footer-info {
+        padding-top: 10px;
+    }
+
+    .footer-info a {
+        color: inherit;
+    }
+
+    .footer-contact hr {
+        margin: 1rem 0;
+        border: none;
+        height: 1px;
+    }
+
+    #footer-redes {
+        display: flex;
+        flex-direction: row;
+        padding-left: 2px;
+        gap: 1rem;
+    }
+
+    #footer-redes img {
+        width: 24px;
+        height: 24px;
+    }
+
+
+}
+
+@media (max-width: 400px) {
+
+    /* Ajustar tamanho do logo e espaçamento */
+    .logo {
+        font-size: 1.8rem;
+    }
+
+    /* HEADER NAV LATERAL */
+    nav a {
+        font-size: 0.9rem;
+    }
+
+    /* HERO SECTION */
+    .overlay h1 {
+        font-size: 4.2rem;
+        letter-spacing: -2px;
+    }
+
+    .overlay p {
+        font-size: 1rem;
+    }
+
+    .overlay .mini {
+        font-size: 0.7rem;
+    }
+
+    .hero .legenda p {
+        font-size: 0.8rem;
+        text-align: left;
+    }
+
+    /* INTRO */
+    .intro {
+        padding: 4rem 1rem;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .intro-text h2 {
+        font-size: 2.4rem;
+        text-align: center;
+    }
+
+    .intro-p {
+        font-size: 1.05rem;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    /* SERVIÇOS */
+    .card-container {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        width: 100%;
+        height: auto;
+        padding: 2rem 1rem;
+    }
+
+    .card h3 {
+        font-size: 1.3rem;
+        position: static;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    .card a {
+        position: static;
+        transform: none;
+    }
+
+    /* DETALHES */
+    .descricao {
+        width: 100%;
+        height: auto;
+        padding: 1.5rem;
+    }
+
+    .descricao h3 {
+        font-size: 1.6rem;
+    }
+
+    .descricao p {
+        font-size: 1rem;
+    }
+
+    .arrows {
+        display: none;
+    }
+
+    /* CONTATO */
+    .form-box {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .formulario {
+        padding: 1rem;
+    }
+
+    form button {
+        width: 100%;
+        padding: 1rem;
+        font-size: 1rem;
+    }
+
+    /* FOOTER */
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .footer-logo h1 {
+        font-size: 2rem;
+    }
+
+    .footer-bottom {
+        position: static;
+        margin-top: 1rem;
+    }
+
+    .footer-contact,
+    .footer-info {
+        width: 100%;
+        text-align: center;
+    }
+
+    #footer-redes {
+        justify-content: center;
+    }
 }
