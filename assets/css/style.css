@@ -50,20 +50,32 @@ section {
     left: 1.8%;
 }
 
+.container {
+    margin: 0 auto;
+    position: relative;
+}
+
 /* ===== HEADER E NAV ===== */
-.top-nav {
+header {
     position: fixed;
-    z-index: 999;
     top: 0;
     left: 0;
+    right: 0;
+    z-index: 999;
     width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding: 1rem 2.3rem;
     background: #fff;
     transition: all 300ms ease-in-out;
-    filter: drop-shadow(0 -10px 20px rgb(173, 173, 173));
+    box-shadow: -3px 0 10px rgba(0, 0, 0, 0.3);
+
+}
+
+#size {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
 }
 
 .logo {
@@ -74,12 +86,18 @@ section {
     color: #d10000;
 }
 
+#navDeBarra {
+    display: flex;
+    align-items: center;
+}
+
 nav {
     display: flex;
     gap: 1.5rem;
     font-family: var(--montserrat);
     font-weight: bold;
     font-size: 1rem;
+    align-items: center;
 }
 
 nav a {
@@ -88,9 +106,53 @@ nav a {
 
 nav a:hover {
     color: var(--V2);
-    /* transform: scale(1.05); */
     transform: translateY(-1px);
     transition: all 0.5s ease;
+}
+
+#mobile {
+    height: 100%;
+    color: var(--V5);
+    display: none;
+}
+
+#side-menu {
+    position: fixed;
+    top: 0;
+    right: -250px;
+    /* Oculto fora da tela */
+    width: 250px;
+    height: 100vh;
+    background: #1C1C1E;
+    transition: right 0.3s ease-in-out;
+    padding-top: 60px;
+}
+
+#side-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+#side-menu li {
+    padding: 15px;
+    text-align: center;
+}
+
+#side-menu a {
+    color: #949fb6;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-decoration: none;
+    display: block;
+}
+
+#close-menu {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
 }
 
 /* ===== HERO SECTION ===== */
@@ -266,7 +328,7 @@ nav a:hover {
     border-radius: 8px;
     width: 50%;
     width: 700px;
-    min-height: 500px;
+    height: 500px;
     display: flex;
     flex-direction: column;
     gap: 2.8rem;
@@ -433,12 +495,12 @@ form button:hover {
 }
 
 /* ===== TERMO ===== */
-.container {
+/* .container {
     width: 70%;
     margin: 0 auto;
     margin-top: 120px;
     margin-bottom: 40px;
-}
+} */
 
 .hero-termo {
     background: var(--Degrade2);
@@ -574,6 +636,50 @@ footer {
 
 /* ===== RESPONSIVIDADE ===== */
 @media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1rem;
+        gap: 0.5rem;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.8rem;
+        width: 100%;
+    }
+
+    nav a {
+        font-size: 1rem;
+        padding: 0.4rem 0;
+    }
+
+    .logo {
+        font-size: 2rem;
+    }
+
+    #numsei {
+        display: none;
+    }
+
+    #mobile {
+        display: block;
+    }
+
+    #bars {
+        font-size: 25px;
+        cursor: pointer;
+    }
+
+    #side-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /* FOOTER */
     .footer-content {
         flex-direction: column;
         align-items: center;
@@ -583,4 +689,50 @@ footer {
     .footer-contact hr {
         width: 100%;
     }
+}
+
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1rem;
+        gap: 0.5rem;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.8rem;
+        width: 100%;
+    }
+
+    nav a {
+        font-size: 1rem;
+        padding: 0.4rem 0;
+    }
+
+    .logo {
+        font-size: 2rem;
+    }
+
+    #numsei {
+        display: none;
+    }
+
+    #mobile {
+        display: block;
+    }
+
+    #bars {
+        font-size: 25px;
+        cursor: pointer;
+    }
+
+    #side-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
 }

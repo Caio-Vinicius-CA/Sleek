@@ -10,6 +10,30 @@ let servicosData = []; // Variável global para armazenar os serviços
 let currentServiceIndex = 0; // Índice do serviço atual
 
 
+function menuLateral() {
+    const menuIcon = document.getElementById("bars");
+    const sideMenu = document.getElementById("side-menu");
+    const closeMenu = document.getElementById("close-menu");
+
+    // Abrir menu lateral
+    menuIcon.addEventListener("click", function () {
+        sideMenu.style.right = "0"; // Exibir menu lateral
+    });
+
+    // Fechar menu lateral
+    closeMenu.addEventListener("click", function () {
+        sideMenu.style.right = "-250px"; // Ocultar menu lateral
+    });
+
+    // Fechar ao clicar fora do menu
+    document.addEventListener("click", function (event) {
+        if (!sideMenu.contains(event.target) && event.target !== menuIcon) {
+            sideMenu.style.right = "-250px";
+        }
+    });
+}
+
+// Função de hover dos cards
 function OnHoverCard() {
     const allCards = document.getElementsByClassName("card");
 
@@ -28,6 +52,7 @@ function OnHoverCard() {
     });
 }
 
+
 function atualizarServico(index) {
     // Verifica os limites do array
     if (index >= 0 && index < servicosData.length) {
@@ -39,7 +64,7 @@ function atualizarServico(index) {
 
 function configurarServicos(servicos) {
     servicosData = servicos; // Armazena os serviços na variável global
-    
+
     // Configura os botões "Saiba Mais"
     const botoes = document.querySelectorAll('.cardButtons');
     botoes.forEach((botao, index) => {
@@ -66,6 +91,7 @@ function configurarServicos(servicos) {
 
 document.addEventListener('DOMContentLoaded', () => {
     OnHoverCard();
+    menuLateral();
 
     fetch('assets/data/servicos.json')
         .then(response => {

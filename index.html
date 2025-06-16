@@ -16,190 +16,213 @@
       rel="stylesheet"
     />
 
+    <!-- ICONS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
     <!-- Link Script -->
     <script src="assets/js/script.js" defer></script>
   </head>
   <body>
     <!-- Header -->
-    <header class="top-nav">
-      <div class="logo"><a href="#inicio">sleek.</a></div>
-      <nav>
-        <a href="#inicio">início</a>
-        <img src="assets/images/Estrela 2.png" alt="Estrela" />
-        <a href="#sobre">sobre</a>
-        <img src="assets/images/Estrela 2.png" alt="Estrela" />
-        <a href="#servicos">serviços</a>
-        <img src="assets/images/Estrela 2.png" alt="Estrela" />
-        <a href="#contato">contato</a>
-      </nav>
+    <header>
+      <div id="size">
+        <div class="logo"><a href="#inicio">sleek.</a></div>
+        <div id="fakeNav">
+          <nav id="numsei">
+            <a href="#inicio">início</a>
+            <img src="assets/images/Estrela 2.png" alt="Estrela" />
+            <a href="#sobre">sobre</a>
+            <img src="assets/images/Estrela 2.png" alt="Estrela" />
+            <a href="#servicos">serviços</a>
+            <img src="assets/images/Estrela 2.png" alt="Estrela" />
+            <a href="#contato">contato</a>
+          </nav>
+          <div id="mobile">
+            <i id="bars" class="fa-solid fa-bars"></i>
+          </div>
+        </div>
+        <nav id="side-menu">
+          <ul id="head-list">
+            <li class="active"><a href="#inicio">início</a></li>
+            <li><a href="#sobre">sobre</a></li>
+            <li><a href="#servicos">serviços</a></li>
+            <li><a href="#contato">contato</a></li>
+          </ul>
+          <span id="close-menu">&times;</span>
+        </nav>
+      </div>
     </header>
 
-    <!-- Início -->
-    <section class="hero" id="inicio">
-      <div class="overlay">
-        <div id="minis">
-          <p class="mini">ESTD. 2024</p>
-          <p class="mini">RECIFE - BRASIL</p>
+    <main class="container">
+      <!-- Início -->
+      <section class="hero" id="inicio">
+        <div class="overlay">
+          <div id="minis">
+            <p class="mini">ESTD. 2024</p>
+            <p class="mini">RECIFE - BRASIL</p>
+          </div>
+          <h1>sleek.</h1>
+          <p>ESTÚDIO CRIATIVO</p>
         </div>
-        <h1>sleek.</h1>
-        <p>ESTÚDIO CRIATIVO</p>
-      </div>
-      <div class="legenda">
-        <p>
-          ESTÚDIO CRIATIVO <br />
-          BRANDING & MARKETING
-        </p>
-      </div>
-    </section>
-
-    <!-- Sobre -->
-    <section class="intro" id="sobre">
-      <div class="intro-text">
-        <h2>IT’S TIME<br /><span>FOR NEW</span><br />IDEAS</h2>
-        <div class="intro-p">
+        <div class="legenda">
           <p>
-            nossa agência carrega uma nova perspectiva de marketing e branding,
-            tendo como objetivo fortalecer o posicionamento da sua marca,
-            atráves de estratégias criativas e eficazes desenvolvidas de forma
-            personalizada
+            ESTÚDIO CRIATIVO <br />
+            BRANDING & MARKETING
           </p>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Serviços -->
-    <section class="servicos" id="servicos">
-      <div class="card-container" id="card-container-id">
-        <div class="card">
-          <h3>social<br />media</h3>
-          <a href="#detalhes-servico-id" class="cardButtons">SAIBA MAIS</a>
+      <!-- Sobre -->
+      <section class="intro" id="sobre">
+        <div class="intro-text">
+          <h2>IT’S TIME<br /><span>FOR NEW</span><br />IDEAS</h2>
+          <div class="intro-p">
+            <p>
+              nossa agência carrega uma nova perspectiva de marketing e
+              branding, tendo como objetivo fortalecer o posicionamento da sua
+              marca, atráves de estratégias criativas e eficazes desenvolvidas
+              de forma personalizada
+            </p>
+          </div>
         </div>
-        <div class="card">
-          <h3>story<br />maker</h3>
-          <a href="#detalhes-servico-id" class="cardButtons">SAIBA MAIS</a>
-        </div>
-        <div class="card">
-          <h3>design<br />digital</h3>
-          <a href="#detalhes-servico-id" class="cardButtons">SAIBA MAIS</a>
-        </div>
-        <div class="card">
-          <h3>tráfego<br />pago</h3>
-          <a href="#detalhes-servico-id" class="cardButtons">SAIBA MAIS</a>
-        </div>
-      </div>
-      <div class="legenda">
-        <p>
-          ESTÚDIO CRIATIVO <br />
-          BRANDING & MARKETING
-        </p>
-      </div>
-    </section>
+      </section>
 
-    <!-- Detalhes de serviço -->
-    <section class="detalhes-servico" id="detalhes-servico-id">
-      <h2>NOSSOS<br />SERVIÇOS</h2>
-      <div class="descricao">
-        <div>
-          <h3 id="servico-titulo">social<br />media</h3>
+      <!-- Serviços -->
+      <section class="servicos" id="servicos">
+        <div class="card-container" id="card-container-id">
+          <div class="card">
+            <h3>social<br />media</h3>
+            <a href="#detalhes-servico-id" class="cardButtons">SAIBA MAIS</a>
+          </div>
+          <div class="card">
+            <h3>story<br />maker</h3>
+            <a href="#detalhes-servico-id" class="cardButtons">SAIBA MAIS</a>
+          </div>
+          <div class="card">
+            <h3>design<br />digital</h3>
+            <a href="#detalhes-servico-id" class="cardButtons">SAIBA MAIS</a>
+          </div>
+          <div class="card">
+            <h3>tráfego<br />pago</h3>
+            <a href="#detalhes-servico-id" class="cardButtons">SAIBA MAIS</a>
+          </div>
         </div>
-        <div>
-          <p id="servico-desc">
-            é um serviço essencial para qualquer negócio que deseja se destacar
-            no mercado digital. ao nos contratar você garante que sua marca
-            esteja presente nas redes sociais de forma estratégica e eficaz.
-            este serviço inclui o desenvolvimento de posts, vídeos, stories e
-            outros formatos de conteúdo relevantes para o público, além do
-            monitoramento das métricas das redes sociais para avaliar o
-            desempenho das ações.
+        <div class="legenda">
+          <p>
+            ESTÚDIO CRIATIVO <br />
+            BRANDING & MARKETING
           </p>
         </div>
-        <div class="arrows">
-          <div class="arrows-inside">
-            <span id="left-arrow">◄</span>
-            <span id="right-arrow">►</span>
+      </section>
+
+      <!-- Detalhes de serviço -->
+      <section class="detalhes-servico" id="detalhes-servico-id">
+        <h2>NOSSOS<br />SERVIÇOS</h2>
+        <div class="descricao">
+          <div>
+            <h3 id="servico-titulo">social<br />media</h3>
+          </div>
+          <div>
+            <p id="servico-desc">
+              é um serviço essencial para qualquer negócio que deseja se
+              destacar no mercado digital. ao nos contratar você garante que sua
+              marca esteja presente nas redes sociais de forma estratégica e
+              eficaz. este serviço inclui o desenvolvimento de posts, vídeos,
+              stories e outros formatos de conteúdo relevantes para o público,
+              além do monitoramento das métricas das redes sociais para avaliar
+              o desempenho das ações.
+            </p>
+          </div>
+          <div class="arrows">
+            <div class="arrows-inside">
+              <span id="left-arrow">◄</span>
+              <span id="right-arrow">►</span>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="legenda">
-        <p>
-          ESTÚDIO CRIATIVO <br />
-          BRANDING & MARKETING
-        </p>
-      </div>
-    </section>
+        <div class="legenda">
+          <p>
+            ESTÚDIO CRIATIVO <br />
+            BRANDING & MARKETING
+          </p>
+        </div>
+      </section>
 
-    <!-- Contato -->
-    <section class="contato" id="contato">
-      <div class="form-box">
-        <!-- Informações de contato -->
-        <div class="contato-dados">
-          <h2>contate-nos</h2>
-          <div class="dados">
-            <a href="mailto:sleekstudiocriativo@gmail.com" target="_blank">
-              <img class="icon" src="assets/icons/mail.svg" alt="mail" />
-            </a>
-            <a href="mailto:sleekstudiocriativo@gmail.com" target="_blank">
-              <p>sleekstudiocriativo@gmail.com</p>
-            </a>
+      <!-- Contato -->
+      <section class="contato" id="contato">
+        <div class="form-box">
+          <!-- Informações de contato -->
+          <div class="contato-dados">
+            <h2>contate-nos</h2>
+            <div class="dados">
+              <a href="mailto:sleekstudiocriativo@gmail.com" target="_blank">
+                <img class="icon" src="assets/icons/mail.svg" alt="mail" />
+              </a>
+              <a href="mailto:sleekstudiocriativo@gmail.com" target="_blank">
+                <p>sleekstudiocriativo@gmail.com</p>
+              </a>
+            </div>
+            <div class="dados">
+              <a href="https://api.whatsapp.com/send?phone=" target="_blank">
+                <img class="icon" src="assets/icons/phone.svg" alt="phone" />
+              </a>
+              <a href="https://api.whatsapp.com/send?phone=" target="_blank">
+                <p>+55 81 99362-7547</p>
+              </a>
+            </div>
+            <div class="dados">
+              <a href="https://www.instagram.com/sleekestudio" target="_blank">
+                <img
+                  class="icon"
+                  src="assets/icons/instagram.svg"
+                  alt="instagram"
+                />
+              </a>
+              <a href="https://www.instagram.com/sleekestudio" target="_blank">
+                <p>@sleekstudio</p>
+              </a>
+            </div>
           </div>
-          <div class="dados">
-            <a href="https://api.whatsapp.com/send?phone=" target="_blank">
-              <img class="icon" src="assets/icons/phone.svg" alt="phone" />
-            </a>
-            <a href="https://api.whatsapp.com/send?phone=" target="_blank">
-              <p>+55 81 99362-7547</p>
-            </a>
-          </div>
-          <div class="dados">
-            <a href="https://www.instagram.com/sleekestudio" target="_blank">
-              <img
-                class="icon"
-                src="assets/icons/instagram.svg"
-                alt="instagram"
+
+          <!-- Formulário -->
+          <form class="formulario">
+            <div class="ipt">
+              <label for="nome">Nome</label>
+              <input type="text" id="nome" placeholder="Seu nome" required />
+            </div>
+            <div class="ipt">
+              <label for="tel">Telefone</label>
+              <input
+                type="text"
+                id="tel"
+                placeholder="+55 (21) 9999-9999"
+                required
               />
-            </a>
-            <a href="https://www.instagram.com/sleekestudio" target="_blank">
-              <p>@sleekstudio</p>
-            </a>
-          </div>
+            </div>
+            <div class="ipt">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                placeholder="contato@email.com"
+                required
+              />
+            </div>
+            <div class="ipt">
+              <label for="mensagem">Mensagem</label>
+              <textarea
+                id="mensagem"
+                placeholder="O que você precisa?"
+              ></textarea>
+            </div>
+            <button type="submit">ENVIAR MENSAGEM</button>
+          </form>
         </div>
-
-        <!-- Formulário -->
-        <form class="formulario">
-          <div class="ipt">
-            <label for="nome">Nome</label>
-            <input type="text" id="nome" placeholder="Seu nome" required />
-          </div>
-          <div class="ipt">
-            <label for="tel">Telefone</label>
-            <input
-              type="text"
-              id="tel"
-              placeholder="+55 (21) 9999-9999"
-              required
-            />
-          </div>
-          <div class="ipt">
-            <label for="email">Email</label>
-            <input
-              type="email"
-              id="email"
-              placeholder="contato@email.com"
-              required
-            />
-          </div>
-          <div class="ipt">
-            <label for="mensagem">Mensagem</label>
-            <textarea
-              id="mensagem"
-              placeholder="O que você precisa?"
-            ></textarea>
-          </div>
-          <button type="submit">ENVIAR MENSAGEM</button>
-        </form>
-      </div>
-    </section>
-
+      </section>
+    </main>
     <!-- Footer -->
     <footer>
       <div class="footer-content">
