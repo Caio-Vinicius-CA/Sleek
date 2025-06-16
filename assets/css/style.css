@@ -112,7 +112,7 @@ nav a:hover {
 
 #mobile {
     height: 100%;
-    color: var(--V1);
+    color: var(--V5);
     display: none;
 }
 
@@ -139,7 +139,7 @@ nav a:hover {
 }
 
 #side-menu a {
-    color: #d10000;
+    color: var(--V1);
     font-weight: bold;
     font-size: 1.2rem;
     text-decoration: none;
@@ -151,7 +151,7 @@ nav a:hover {
     top: 15px;
     right: 20px;
     font-size: 30px;
-    color: white;
+    color: var(--V1);
     cursor: pointer;
 }
 
@@ -514,7 +514,7 @@ form button:hover {
 }
 
 .hero-termo h1 {
-    color: #fff;
+    color: var(--Branco);
     font-size: 4rem;
 }
 
@@ -668,6 +668,7 @@ footer {
     #bars {
         font-size: 25px;
         cursor: pointer;
+        color: var(--V1);
     }
 
     #side-menu {
@@ -864,7 +865,6 @@ footer {
     footer {
         padding: 3.5rem 1rem 5.5rem 1rem;
         font-size: 1.2rem;
-        border: 1px solid blue;
     }
 
     .footer-content {
@@ -964,18 +964,14 @@ footer {
 }
 
 @media (max-width: 400px) {
-
-    /* Ajustar tamanho do logo e espaçamento */
     .logo {
         font-size: 1.8rem;
     }
 
-    /* HEADER NAV LATERAL */
     nav a {
         font-size: 0.9rem;
     }
 
-    /* HERO SECTION */
     .overlay h1 {
         font-size: 4.2rem;
         letter-spacing: -2px;
@@ -1001,20 +997,28 @@ footer {
         gap: 2rem;
     }
 
+    .divH2 {
+        width: 90%;
+    }
+
+    #nossosServicos {
+        font-size: 2.5rem;
+    }
+
     .intro-text h2 {
         font-size: 2.4rem;
-        text-align: center;
+        text-align: start;
     }
 
     .intro-p {
         font-size: 1.05rem;
-        width: 100%;
+        width: 90%;
         margin: 0 auto;
     }
 
     /* SERVIÇOS */
     .card-container {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .card {
@@ -1037,9 +1041,10 @@ footer {
 
     /* DETALHES */
     .descricao {
-        width: 100%;
-        height: auto;
+        width: 92%;
+        height: 420px;
         padding: 1.5rem;
+        margin: 0 auto;
     }
 
     .descricao h3 {
@@ -1051,7 +1056,7 @@ footer {
     }
 
     .arrows {
-        display: none;
+        top: 90%;
     }
 
     /* CONTATO */
@@ -1071,6 +1076,11 @@ footer {
     }
 
     /* FOOTER */
+    footer {
+        padding: 3.5rem 1rem 2rem 1rem;
+        font-size: 1.2rem;
+    }
+
     .footer-content {
         flex-direction: column;
         align-items: center;
@@ -1083,7 +1093,6 @@ footer {
 
     .footer-bottom {
         position: static;
-        margin-top: 1rem;
     }
 
     .footer-contact,
