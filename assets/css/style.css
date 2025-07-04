@@ -54,6 +54,10 @@ section {
     margin: 0 auto;
     position: relative;
 }
+.all-termos{
+    width: 70%;
+    margin: 0 auto;
+}
 
 abbr[title] {
     text-decoration: none;
@@ -536,6 +540,10 @@ form button:hover {
 
 .unidades {
     margin-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
 }
 
 .unidades h2 {

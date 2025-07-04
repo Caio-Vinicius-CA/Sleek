@@ -1,1 +1,1 @@
-Mudar pra parte do detalhe do serviço
+Adicionar e alterar os media-queries do .hero-termo
