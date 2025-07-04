@@ -55,6 +55,12 @@ section {
     position: relative;
 }
 
+abbr[title] {
+    text-decoration: none;
+    border-bottom: none;
+    cursor: default;
+}
+
 /* ===== HEADER E NAV ===== */
 header {
     position: fixed;
@@ -192,6 +198,8 @@ nav a:hover {
     font-family: var(--roboto);
     font-size: 0.8rem;
     font-weight: 200;
+    text-decoration: none;
+    border-bottom: none;
 }
 
 /* ===== INTRO ===== */
@@ -229,16 +237,19 @@ nav a:hover {
 /* ===== SERVIÇOS GERAL ===== */
 .servicos {
     background: var(--V2);
-    padding: 5.5rem 16.5rem;
+    padding: 5.5rem;
     color: white;
     position: relative;
+    display: flex;
+    justify-content: center;
 }
 
 .card-container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(1, 1fr);
-    gap: 50px;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 1rem;
 }
 
 .card {
@@ -246,11 +257,12 @@ nav a:hover {
     color: var(--Branco);
     border: 1px solid var(--Branco);
     border-radius: 12px;
-    flex: 1;
     text-align: center;
     filter: drop-shadow(4px 4px 4px var(--V5));
     height: 200px;
-    width: 200px;
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto;
     position: relative;
     transition: all 0.4s ease;
 }
@@ -295,10 +307,11 @@ nav a:hover {
 
 /* ===== SERVIÇOS DETALHES ===== */
 .detalhes-servico {
-    padding: 4rem 4rem;
+    padding: 4rem;
     position: relative;
     display: flex;
     justify-content: space-between;
+    gap: 20px;
 }
 
 .detalhes-servico h2 {
@@ -320,9 +333,9 @@ nav a:hover {
 
 .descricao {
     background: var(--V2);
+    position: relative;
     color: white;
     padding: 2rem;
-    margin-right: 3em;
     border-radius: 8px;
     width: 50%;
     width: 700px;
@@ -564,9 +577,9 @@ footer {
 
 .footer-content {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: flex-start;
-    flex-wrap: wrap;
     gap: 10rem;
 }
 
@@ -1055,7 +1068,7 @@ footer {
         font-size: 1rem;
     }
 
-    /* DETALHES */
+    /* SERVIÇOS DETALHES */
     .descricao {
         width: 94%;
         padding: 1.5rem;
@@ -1074,7 +1087,6 @@ footer {
         text-align: justify;
     }
 
-    /* Setas centralizadas e consistentes */
     .arrows {
         position: relative;
         top: auto;
