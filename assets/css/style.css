@@ -331,7 +331,7 @@ nav a:hover {
     display: block;
     width: 73%;
     height: 3px;
-    background: var(--EstrelaHover);
+    background: blue;
     margin-top: 1rem;
 }
 
