@@ -272,7 +272,7 @@ nav a:hover {
     max-width: 200px;
     margin: 0 auto;
     position: relative;
-    transition: all 0.4s ease;
+    transition: all 0.7s ease-in-out;
 }
 
 .card-hover {
