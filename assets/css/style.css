@@ -525,12 +525,6 @@ form button:hover {
 }
 
 /* ===== TERMO ===== */
-/* .container {
-    width: 70%;
-    margin: 0 auto;
-    margin-top: 120px;
-    margin-bottom: 40px;
-} */
 
 .hero-termo {
     background: var(--Degrade2);
@@ -924,6 +918,62 @@ footer {
         top: auto;
         align-self: center;
         padding: 0.8rem 1.4rem;
+    }
+
+    /* ===== TERMO ===== */
+
+    .hero-termo {
+        height: 40vw;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        margin-top: 70px;
+        padding: 0;
+    }
+
+    .inside-hero {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .hero-termo h1 {
+        font-size: 1.9rem;
+    }
+
+    .hero-termo h2 {
+        margin-bottom: 0.5rem;
+        margin-top: 0;
+        font-size: 1rem;
+    }
+
+    .unidades {
+        margin-bottom:1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    .unidades h2 {
+        margin-bottom: 0.5rem;
+        color: var(--V5);
+        margin-top: 2rem
+    }
+
+    .termo section ul {
+        padding: 12px 0;
+        margin-left: 1rem;
+    }
+
+    .termo ul li {
+        padding: 3px 0;
+    }
+
+    #last-sth {
+        margin-top: 3rem;
+        font-size: 0.9rem;
+        color: var(--C5);
+        justify-self: flex-end;
     }
 
     /* ===== FOOTER ===== */
