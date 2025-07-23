@@ -65,6 +65,10 @@ abbr[title] {
     cursor: default;
 }
 
+.fueda{
+    background-color: blue;
+}
+
 /* ===== HEADER E NAV ===== */
 header {
     position: fixed;
@@ -1084,6 +1088,7 @@ footer {
         margin: 0 auto;
         min-height: auto;
         max-height: none;
+        filter: none;
     }
 
     .descricao h3 {
