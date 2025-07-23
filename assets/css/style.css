@@ -54,7 +54,8 @@ section {
     margin: 0 auto;
     position: relative;
 }
-.all-termos{
+
+.all-termos {
     width: 70%;
     margin: 0 auto;
 }
@@ -65,7 +66,7 @@ abbr[title] {
     cursor: default;
 }
 
-.invisible{
+.invisible {
     background-color: rgba(0, 0, 0, 0);
 }
 
@@ -182,6 +183,20 @@ nav a:hover {
 
 .hero .legenda {
     color: #404040;
+}
+
+.hero .legenda p {
+    text-decoration: none !important;
+    text-decoration-line: none;
+    -webkit-text-decoration: none;
+    border: none;
+}
+
+.hero .legenda p,
+.hero .legenda p abbr,
+.hero .legenda p a {
+    text-decoration: none !important;
+    border: none !important;
 }
 
 .overlay {
@@ -724,7 +739,6 @@ footer {
 
     .hero .legenda p {
         font-size: 0.75rem;
-        text-align: center;
     }
 
     /* INTRO */
@@ -919,7 +933,7 @@ footer {
     }
 
     .footer-content {
-        flex-direction: column;
+        flex-direction: column-reverse;
         align-items: center;
         gap: 1.5rem;
     }
@@ -1022,7 +1036,6 @@ footer {
 
     .hero .legenda p {
         font-size: 0.75rem;
-        text-align: center;
     }
 
     /* INTRO */
@@ -1146,7 +1159,7 @@ footer {
     }
 
     .footer-content {
-        flex-direction: column;
+        flex-direction: column-reverse;
         align-items: center;
         gap: 1.5rem;
     }
