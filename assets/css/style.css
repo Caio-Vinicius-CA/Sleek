@@ -993,7 +993,7 @@ footer {
 
 }
 
-@media (max-width: 400px) {
+@media (max-width: 475px) {
     .logo {
         font-size: 1.8rem;
     }
