@@ -100,7 +100,7 @@ header {
     font-style: italic;
     font-size: 2.3rem;
     color: var(--V1);
-    letter-spacing: -2px;
+    letter-spacing: -1px;
 }
 
 #navDeBarra {
