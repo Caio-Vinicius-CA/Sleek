@@ -6,6 +6,8 @@
     --V2: #AE080B;
     --V3: #920003;
     --V5: #530002;
+    --V6: #740003;
+    --V7: #920003;
     --C1: #F7F7F7;
     --C3: #DEDEDE;
     --C5: #B3B3B3;
@@ -560,8 +562,12 @@ form button:hover {
 
 .unidades h2 {
     margin-bottom: 0.5rem;
-    color: var(--V5);
+    color: var(--V6);
     margin-top: 2rem
+}
+
+.unidades a {
+    color: var(--V7);
 }
 
 .termo section ul {
