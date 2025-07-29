@@ -1,20 +1,20 @@
 /* ===== ESTILOS BÁSICOS ===== */
 :root {
-    --Branco: #F5F5F5;
-    --Fundo2: #F0F0F0;
-    --V1: #D11C20;
-    --V2: #AE080B;
+    --Branco: #f5f5f5;
+    --Fundo2: #f0f0f0;
+    --V1: #d11c20;
+    --V2: #ae080b;
     --V3: #920003;
     --V5: #530002;
     --V6: #740003;
     --V7: #920003;
-    --C1: #F7F7F7;
-    --C3: #DEDEDE;
-    --C5: #B3B3B3;
+    --C1: #f7f7f7ff;
+    --C3: #dededeff;
+    --C5: #b3b3b3;
     --EstrelaHover: #ce1c1f99;
     --Degrade2: linear-gradient(#920003, #530002);
-    --roboto: 'Roboto', sans-serif;
-    --montserrat: 'Montserrat', sans-serif;
+    --roboto: "Roboto", sans-serif;
+    --montserrat: "Montserrat", sans-serif;
 }
 
 * {
@@ -31,6 +31,19 @@ body {
     font-family: var(--roboto);
     color: #111;
     background-color: var(--Branco);
+}
+
+input,
+select,
+button,
+textarea {
+    -webkit-appearance: none;
+    appearance: none;
+    font-family: inherit;
+    font-size: 100%;
+    border: none;
+    outline: none;
+    background: none;
 }
 
 a {
@@ -70,6 +83,17 @@ abbr[title] {
 
 .invisible {
     background-color: rgba(0, 0, 0, 0);
+}
+
+#tel {
+    color: var(--C5) !important;
+    -webkit-text-fill-color: var(--C5);
+    -webkit-text-stroke: 0px;
+    /* Garante que não há contorno */
+    text-decoration: none;
+    transition: none;
+    animation: none;
+
 }
 
 /* ===== HEADER E NAV ===== */
@@ -174,7 +198,7 @@ nav a:hover {
 
 /* ===== HERO SECTION ===== */
 .hero {
-    background: url('../images/Fundo.png') no-repeat center center/cover;
+    background: url("../images/Fundo.png") no-repeat center center/cover;
     height: 100vh;
     position: relative;
     color: white;
@@ -348,7 +372,7 @@ nav a:hover {
 }
 
 .detalhes-servico h2::after {
-    content: '';
+    content: "";
     display: block;
     width: 73%;
     height: 3px;
@@ -550,7 +574,7 @@ form button:hover {
 .hero-termo h2 {
     margin-bottom: 0.5rem;
     color: rgba(181, 118, 119, 0.7);
-    margin-top: 2rem
+    margin-top: 2rem;
 }
 
 .unidades {
@@ -558,13 +582,12 @@ form button:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
-
 }
 
 .unidades h2 {
     margin-bottom: 0.5rem;
     color: var(--V6);
-    margin-top: 2rem
+    margin-top: 2rem;
 }
 
 .unidades a {
@@ -954,17 +977,16 @@ footer {
     }
 
     .unidades {
-        margin-bottom:1rem;
+        margin-bottom: 1rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
-
     }
 
     .unidades h2 {
         margin-bottom: 0.5rem;
         color: var(--V5);
-        margin-top: 2rem
+        margin-top: 2rem;
     }
 
     .termo section ul {
@@ -1030,7 +1052,6 @@ footer {
         text-align: center;
         width: 100%;
         font-size: 0.9rem;
-
     }
 
     .footer-content h2 {
@@ -1064,8 +1085,6 @@ footer {
         width: 22px;
         height: 22px;
     }
-
-
 }
 
 @media (max-width: 475px) {
