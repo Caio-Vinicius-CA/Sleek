@@ -1,1 +1,0 @@
-Adicionar e alterar os media-queries do .hero-termo
