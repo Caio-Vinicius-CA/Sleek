@@ -535,7 +535,8 @@ nav a:hover {
 
 form button {
     position: absolute;
-    top: 87.5%;
+    top: 89%;
+    right: 2%;
     align-self: flex-end;
     background: var(--Degrade2);
     color: white;
@@ -946,6 +947,7 @@ footer {
     form button {
         position: static;
         top: auto;
+        right: auto;
         align-self: center;
         padding: 0.8rem 1.4rem;
     }
